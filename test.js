@@ -19,3 +19,12 @@ const send = async (option) => {
         }
     });
 };
+
+let email_data = {
+    from: 'mymai1113@naver.com',
+    to: 'mymai1113@naver.com',
+    subject: 'テストメールです。',
+    text: 'nodejsを簡単に学ぼう'
+}
+
+send(email_data);
