@@ -4,3 +4,19 @@ const appRoot = require('app-root-path'); // app root 経路を持ってくるli
 const process = require('process');
 
 const logDir = `${appRoot}/logs`; // logsディレクトリ内にログファイルを登録
+
+const {
+    combine,
+    timestamp,
+    label,
+    printf
+} = winston.format;
+
+const logFormat = printf(({
+    level,
+    message,
+    label,
+    timestamp
+}) => {
+    return `${timestamp} [${label}] ${level}: ${message}`; //log出力フォーマット定義
+});
