@@ -20,3 +20,9 @@ const logFormat = printf(({
 }) => {
     return `${timestamp} [${label}] ${level}: ${message}`; //log出力フォーマット定義
 });
+
+/*
+ * Log Level
+ * error: 0, warn: 1, info:2
+ */
+ 
