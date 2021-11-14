@@ -27,7 +27,7 @@ const logFormat = printf(({
  */
  
 const logger = winston.createLogger({
-    
-}
-
-);
+    format: comnbine(
+        
+    )
+});
